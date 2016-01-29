@@ -53,24 +53,29 @@ PurchaseBoneClubs()
 }
 
 ^n::
-	OpenInventory()
-	PurchaseBoneClubs()
-	OpenInventory()
-	Loop, 6
+	InputBox, loops, Loops, Please enter how much loops should be executed (12 bone clubs each loop)
+	Loop, %loops%
 	{
-		SelectSlot(a_index)
-		Sleep 200
-		BoneClub()
-		Sleep 200
-	}
-	OpenInventory()
-	DragHotbar()
-	OpenInventory()
-	Loop, 6
-	{
-		SelectSlot(a_index)
-		Sleep 200
-		BoneClub()
-		Sleep 200
+		OpenInventory()
+		PurchaseBoneClubs()
+		OpenInventory()
+		Loop, 6
+		{
+			SelectSlot(a_index)
+			Sleep 200
+			BoneClub()
+			Sleep 200
+		}
+		OpenInventory()
+		DragHotbar()
+		OpenInventory()
+		Loop, 6
+		{
+			SelectSlot(a_index)
+			Sleep 200
+			BoneClub()
+			Sleep 200
+		}
+		Sleep 300
 	}
 return
