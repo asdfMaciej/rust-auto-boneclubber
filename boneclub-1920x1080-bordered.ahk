@@ -60,6 +60,8 @@ PurchaseBoneClubs()
 		OpenInventory()
 		PurchaseBoneClubs()
 		OpenInventory()
+		Sleep 1000
+
 		Loop, 6
 		{
 			SelectSlot(a_index)
@@ -70,6 +72,8 @@ PurchaseBoneClubs()
 		OpenInventory()
 		DragHotbar()
 		OpenInventory()
+		Sleep 1000
+
 		Loop, 6
 		{
 			SelectSlot(a_index)
@@ -77,9 +81,10 @@ PurchaseBoneClubs()
 			BoneClub()
 			Sleep 200
 		}
-		Sleep 300
+		Sleep 1500
 	}
 return
+
 ^m::
 	Reload
 	Sleep 1000
