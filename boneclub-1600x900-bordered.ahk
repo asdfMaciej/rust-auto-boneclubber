@@ -80,3 +80,7 @@ PurchaseBoneClubs()
 		Sleep 300
 	}
 return
+^m::
+	Reload
+	Sleep 1000
+return
